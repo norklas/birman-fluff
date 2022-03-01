@@ -13,7 +13,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
 
   <body class="max-h-full">
@@ -24,10 +23,10 @@
       <h1 class="text-3xl text-white font-bold pt-2">Weather Dashboard</h1>
     </header>
 
-    <main class="container">
+    <main>
       <!-- Search Form -->
       <div class="flex ml-2">
-        <div class="w-1/3" id="search-div">
+        <div class="w-1/5" id="search-div">
           <div class="py-3">
             <h2 class="text-3xl font-bold">Search for a City:</h2>
           </div>
@@ -35,9 +34,13 @@
             <input
               id="city-input"
               type="text"
-              class="border-solid border-black border rounded-md h-10 w-80 pl-2 mb-3"
+              class="border-solid border-black border rounded-md h-10 w-96 pl-2 mb-3"
             />
-            <button class="bg-blue-400 rounded-md text-white h-8 w-80">
+            <button
+              id="submit-btn"
+              type="submit"
+              class="bg-blue-400 rounded-md text-white font-medium h-8 w-96"
+            >
               Submit
             </button>
           </form>
@@ -46,12 +49,17 @@
           <div id="history"></div>
         </div>
 
-        <div class="w-2/3" id="weather-div">
+        <div class="w-4/5 ml-3" id="weather-div">
           <!-- Divs to hold dynamically generated current weather and 5 day -->
           <div id="current-weather">
             <div id="current-title-container"></div>
+            <div id="current-weather-container"></div>
           </div>
-          <div id="five-day"></div>
+          <div id="five-day" class="flex flex-row">
+            <div id="current-forecast-title">
+              <div id="forecast-container" class="flex flex-row"></div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
