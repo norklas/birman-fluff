@@ -195,7 +195,7 @@ function fiveDay(cityName) {
                 var futureForecastCard = $("<div>");
                 forecastCardContainer.append(futureForecastCard);
                 futureForecastCard.addClass(
-                  "flex flex-col w-40 mr-40 pr-4 pl-2 pt-1 pb-2 mt-2 bg-blue-500 text-left text-white rounded-md"
+                  "flex flex-col w-40 mr-32 pr-4 pl-2 pt-1 pb-2 mt-2 bg-blue-500 text-left text-white rounded-md"
                 );
 
                 var futureForecastDate = $("<p>");
