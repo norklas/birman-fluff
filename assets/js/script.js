@@ -99,7 +99,6 @@ function currentWeather(cityName) {
 
               // Add current temp
               var currentTemp = $("<p>");
-              currentTemp.attr("id", "removal");
               currentTemp.text(
                 "Temperature: " + response.current.temp + " \u00B0F"
               );
@@ -107,7 +106,6 @@ function currentWeather(cityName) {
 
               // Add current humidity
               var currentHumidity = $("<p>");
-              currentHumidity.attr("id", "removal");
               currentHumidity.text(
                 "Humidity: " + response.current.humidity + "%"
               );
@@ -115,7 +113,6 @@ function currentWeather(cityName) {
 
               // Add current wind speed
               var currentWind = $("<p>");
-              currentWind.attr("id", "removal");
               currentWind.text(
                 "Wind Speed: " + response.current.wind_speed + " MPH"
               );
@@ -124,9 +121,7 @@ function currentWeather(cityName) {
               // Add UV index
               var currentUV = $("<p>");
               currentUV.text("UV Index: ");
-              currentUV.attr("id", "removal");
               var currentNumber = $("<p>");
-              currentNumber.attr("id", "removal");
               currentNumber.text(response.current.uvi);
               currentNumber.addClass(
                 "inline w-12 text-white px-3 rounded-md mb-2 ml-1"
